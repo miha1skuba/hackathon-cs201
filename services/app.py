@@ -377,11 +377,26 @@ class TrainRouteApp(ctk.CTk):
         filter = RouteFilter(possible_routes, routes=self.matrix.routes)
         results = filter.filter_routes(start, finish, min_time, max_time, consider_delays=self.delay_var.get())
 
+        self.route = update_route(
+            start, finish, self.delay_var.get(), min_time, max_time
+        )
+
+        self.error_label.configure(text="")
+        self.open_output_window(results)
+
         self.error_label.configure(text="")
         print("Збережений маршрут:", self.route)
 
         # Крок 5. Відкриваємо друге вікно, не закриваючи головну форму.
-        self.open_output_window()
+    def open_output_window(self, results):
+        if self.output_window is not None and self.output_window.winfo_exists():
+            self.output_window.destroy()
+
+        self.output_window = OutputWindow(
+            self,
+            self.route.copy(),
+            results
+        )
 
     def open_output_window(self):
         """Відкриваємо output_frame.py з актуальними параметрами маршруту."""
