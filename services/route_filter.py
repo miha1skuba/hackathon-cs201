@@ -3,7 +3,7 @@ import math
 
 
 class RouteFilter:
-    def __init__(self, routes, matrix=None, all_routes, matrix=None):
+    def __init__(self, routes, matrix=None, all_routes=None):
         self.routes = list(routes.values()) if isinstance(routes, dict) else routes
         self.matrix = matrix
         self.all_routes = all_routes
