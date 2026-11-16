@@ -375,7 +375,7 @@ class TrainRouteApp(ctk.CTk):
 
         possible_routes = self.matrix.search(start, finish)
         filter = RouteFilter(possible_routes)
-        results = filter.filter_routes(possible_routes, consider_delays=self.delay_var.get())
+        results = filter.filter_routes(start, finish, min_time, max_time, consider_delays=self.delay_var.get())
 
         self.error_label.configure(text="")
         print("Збережений маршрут:", self.route)
