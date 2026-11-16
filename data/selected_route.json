@@ -1,0 +1,7 @@
+{
+    "departure_station": "Київ-Пас.",
+    "arrival_station": "Харків-Пас.",
+    "consider_delays": false,
+    "min_transfer_minutes": 15,
+    "max_transfer_minutes": 180
+}
