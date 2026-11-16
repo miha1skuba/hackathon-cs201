@@ -3,6 +3,7 @@ import pprint
 import tkinter as tk
 from tkinter import filedialog
 import customtkinter as ctk
+from services.route_filter import RouteFilter
 from services.stations import STATIONS, find_stations, resolve_station
 from services.route_state import update_route
 from services.output_frame import OutputWindow  # Друге вікно результатів
@@ -167,10 +168,10 @@ class StationField(ctk.CTkFrame):
         return "break"
 
 
-class TrainRouteApp(ctk.CTk):
+class TrainRouteApp(ctk.CTk, matrix):
     """Основне вікно. Найважливіша змінна — self.route."""
 
-    def __init__(self):
+    def __init__(self, matrix):
         super().__init__()
         self.title("Rail Route • Пошук маршруту")
         self.geometry("940x820")
@@ -188,6 +189,8 @@ class TrainRouteApp(ctk.CTk):
         self.body.grid_columnconfigure(0, weight=1)
         self.build_form()
         self.build_footer()
+
+        self.matrix = matrix
 
     def build_header(self):
         """Темно-синя верхня панель — як у попередній версії."""
@@ -370,20 +373,10 @@ class TrainRouteApp(ctk.CTk):
             self.error_label.configure(text="Час пересадки має бути цілим числом хвилин.")
             return
 
-        if min_time < 0 or max_time < min_time:
-            self.error_label.configure(text="Мінімальний час має бути ≥ 0 і не більшим за максимальний.")
-            return
+        possible_routes = self.matrix.search(start, finish)
+        filter = RouteFilter(possible_routes)
+        results = filter.filter_routes(possible_routes, consider_delays=self.delay_var.get())
 
-        # Крок 3. route_state.py зберігає усі 5 параметрів у selected_route.json.
-        try:
-            self.route = update_route(
-                start, finish, self.delay_var.get(), min_time, max_time
-            )
-        except (ValueError, OSError) as error:
-            self.error_label.configure(text=f"Не вдалося зберегти маршрут: {error}")
-            return
-
-        # Крок 4. Залишаємо старий перегляд словника і кнопки копіювання.
         self.error_label.configure(text="")
         print("Збережений маршрут:", self.route)
 

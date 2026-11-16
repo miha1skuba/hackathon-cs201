@@ -10,7 +10,7 @@ def main():
     matrix = Matrix(stations, routes)
     
     app = TrainRouteApp(
- 
+        matrix
     )
 
     # Запускаємо застосунок
