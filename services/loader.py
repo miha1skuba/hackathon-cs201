@@ -1,4 +1,5 @@
 from pathlib import Path
+import json
 
 from models.route import Route
 from models.stop import Stop
@@ -17,7 +18,7 @@ class DataLoader:
     def load_data(self, filename):
         file_path = self.data_path / filename
         with open(file_path, "r") as f:
-            data = f.read()
+            data = json.load(f)
         return data
 
     def load_stations(self):
@@ -32,8 +33,8 @@ class DataLoader:
             stops = {}
 
             for stop in route["stations"]:
-                stops[stop["station_name"]] = Stop(
-                    stop["station_name"],
+                stops[stop["name"]] = Stop(
+                    stop["name"],
                     stop["arrival_time"],
                     stop["departure_time"]
                 )
