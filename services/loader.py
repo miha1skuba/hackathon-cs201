@@ -45,6 +45,8 @@ class DataLoader:
                 route["type"],
                 stops
             )
+
+        return routes
             
 
     def load_all(self):
