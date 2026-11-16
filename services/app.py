@@ -4,7 +4,8 @@ import tkinter as tk
 from tkinter import filedialog
 import customtkinter as ctk
 from services.stations import STATIONS, find_stations, resolve_station
-from services.route_state import update_route 
+from services.route_state import update_route
+from services.output_frame import OutputWindow  # Друге вікно результатів
 
 NAVY = "#142C73"
 BLUE = "#315CC8"
@@ -176,7 +177,8 @@ class TrainRouteApp(ctk.CTk):
         self.minsize(680, 640)
         self.configure(fg_color=PAGE)
 
-        self.route = None  # Сюди після натискання кнопки запишемо словник.
+        self.route = None  # Обрані параметри маршруту.
+        self.output_window = None  # Посилання на друге вікно (створимо пізніше).
         self.grid_columnconfigure(0, weight=1)
         self.grid_rowconfigure(1, weight=1)
 
@@ -185,7 +187,6 @@ class TrainRouteApp(ctk.CTk):
         self.body.grid(row=1, column=0, sticky="nsew")
         self.body.grid_columnconfigure(0, weight=1)
         self.build_form()
-        self.build_preview()
         self.build_footer()
 
     def build_header(self):
@@ -244,12 +245,42 @@ class TrainRouteApp(ctk.CTk):
                                     on_change=self.update_hint)
         self.arrival.grid(row=3, column=0, sticky="ew", padx=30)
 
+        # Два числові поля. Значення зберігатимуться у хвилинах.
+        # Вони потрібні, бо route_state.update_route() приймає 5 аргументів.
+        transfer = ctk.CTkFrame(card, fg_color="#F4F7FC", corner_radius=12)
+        transfer.grid(row=4, column=0, sticky="ew", padx=30, pady=(20, 0))
+        transfer.grid_columnconfigure(0, weight=1)
+        transfer.grid_columnconfigure(1, weight=1)
+
+        ctk.CTkLabel(
+            transfer, text="Мінімальна пересадка (хв)", text_color=INK,
+            font=ctk.CTkFont(size=13, weight="bold")
+        ).grid(row=0, column=0, sticky="w", padx=(15, 8), pady=(15, 6))
+        ctk.CTkLabel(
+            transfer, text="Максимальна пересадка (хв)", text_color=INK,
+            font=ctk.CTkFont(size=13, weight="bold")
+        ).grid(row=0, column=1, sticky="w", padx=(8, 15), pady=(15, 6))
+
+        self.min_transfer_entry = ctk.CTkEntry(
+            transfer, height=45, corner_radius=10, fg_color=WHITE,
+            border_color=BORDER, text_color=INK
+        )
+        self.min_transfer_entry.grid(row=1, column=0, sticky="ew", padx=(15, 8), pady=(0, 15))
+        self.min_transfer_entry.insert(0, "15")
+
+        self.max_transfer_entry = ctk.CTkEntry(
+            transfer, height=45, corner_radius=10, fg_color=WHITE,
+            border_color=BORDER, text_color=INK
+        )
+        self.max_transfer_entry.grid(row=1, column=1, sticky="ew", padx=(8, 15), pady=(0, 15))
+        self.max_transfer_entry.insert(0, "180")
+
         # BooleanVar зберігає True або False для майбутнього self.route.
         self.delay_var = tk.BooleanVar(value=False)
 
         # Рамка тепер клікабельна ВСЯ, а не лише маленький квадратик.
         option = ctk.CTkFrame(card, fg_color="#F4F7FC", corner_radius=12)
-        option.grid(row=4, column=0, sticky="ew", padx=30, pady=(24, 15))
+        option.grid(row=5, column=0, sticky="ew", padx=30, pady=(24, 15))
         option.grid_columnconfigure(1, weight=1)
 
         # Сам чекбокс уже вміє змінювати BooleanVar при натисканні.
@@ -282,53 +313,16 @@ class TrainRouteApp(ctk.CTk):
 
         self.error_label = ctk.CTkLabel(card, text="", text_color="#C7384D",
                                         font=ctk.CTkFont(size=13), anchor="w")
-        self.error_label.grid(row=5, column=0, sticky="ew", padx=30)
+        self.error_label.grid(row=6, column=0, sticky="ew", padx=30)
         ctk.CTkButton(card, text="Знайти маршрут  →", height=54,
                       fg_color=BLUE, hover_color="#2348A6", corner_radius=12,
                       font=ctk.CTkFont(size=16, weight="bold"),
                       command=self.create_route
-                      ).grid(row=6, column=0, sticky="ew", padx=30, pady=(10, 27))
+                      ).grid(row=7, column=0, sticky="ew", padx=30, pady=(10, 27))
 
     def toggle_delay(self, event=None):
         """Перемкнути галочку при натисканні на будь-яке місце картки."""
         self.delay_var.set(not self.delay_var.get())
-
-    def build_preview(self):
-        """Нижня картка для перегляду словника self.route."""
-        card = ctk.CTkFrame(self.body, fg_color=WHITE, corner_radius=22,
-                            border_width=1, border_color=BORDER)
-        card.grid(row=1, column=0, sticky="ew", padx=50, pady=(0, 15))
-        card.grid_columnconfigure(0, weight=1)
-        ctk.CTkLabel(card, text="Запит, який передаємо алгоритму", text_color=INK,
-                     font=ctk.CTkFont(size=19, weight="bold"), anchor="w"
-                     ).grid(row=0, column=0, sticky="ew", padx=30, pady=(20, 4))
-
-        self.route_hint = ctk.CTkLabel(
-            card, text="Оберіть станцію відправлення та станцію прибуття",
-            text_color=MUTED, font=ctk.CTkFont(size=13), anchor="w")
-        self.route_hint.grid(row=1, column=0, sticky="ew", padx=30, pady=(0, 10))
-
-        self.output = ctk.CTkTextbox(card, height=130, corner_radius=12,
-                                     fg_color="#F5F8FD", text_color=INK,
-                                     border_width=1, border_color=BORDER,
-                                     font=ctk.CTkFont(family="Consolas", size=13),
-                                     wrap="word")
-        self.output.grid(row=2, column=0, sticky="ew", padx=30)
-        self.set_output("# Натисни кнопку, щоб створити Python-словник")
-
-        # Залишаємо дві додаткові кнопки зі старого дизайну.
-        actions = ctk.CTkFrame(card, fg_color="transparent")
-        actions.grid(row=3, column=0, sticky="w", padx=30, pady=(12, 22))
-        self.copy_button = ctk.CTkButton(
-            actions, text="Копіювати словник", width=180, height=37,
-            fg_color=SKY, hover_color="#D5E3FF", text_color=BLUE,
-            corner_radius=10, state="disabled", command=self.copy_route)
-        self.copy_button.pack(side="left", padx=(0, 10))
-        self.save_button = ctk.CTkButton(
-            actions, text="Зберегти JSON", width=150, height=37,
-            fg_color=SKY, hover_color="#D5E3FF", text_color=BLUE,
-            corner_radius=10, state="disabled", command=self.save_route)
-        self.save_button.pack(side="left")
 
     def build_footer(self):
         ctk.CTkLabel(
@@ -356,7 +350,8 @@ class TrainRouteApp(ctk.CTk):
         self.error_label.configure(text="")
 
     def create_route(self):
-        """Натиснули кнопку: перевіряємо станції та створюємо self.route."""
+        """Кнопка «Знайти маршрут»: зберігаємо запит і відкриваємо нове вікно."""
+        # Крок 1. Беремо станції та перевіряємо, чи вони існують у JSON.
         start = self.departure.get_station()
         finish = self.arrival.get_station()
 
@@ -367,16 +362,42 @@ class TrainRouteApp(ctk.CTk):
             self.error_label.configure(text="Станції відправлення й прибуття мають відрізнятися.")
             return
 
-        # Створюємо маршрут у route_state.py, а не тільки всередині app.py.
-        # update_route() зберігає його у спільний словник route.
-        # self.route посилається на ТОЙ САМИЙ словник для нашого інтерфейсу.
-        self.route = update_route(start, finish, self.delay_var.get())
+        # Крок 2. Перевіряємо числа: час пересадки в цілих хвилинах.
+        try:
+            min_time = int(self.min_transfer_entry.get())
+            max_time = int(self.max_transfer_entry.get())
+        except ValueError:
+            self.error_label.configure(text="Час пересадки має бути цілим числом хвилин.")
+            return
 
+        if min_time < 0 or max_time < min_time:
+            self.error_label.configure(text="Мінімальний час має бути ≥ 0 і не більшим за максимальний.")
+            return
+
+        # Крок 3. route_state.py зберігає усі 5 параметрів у selected_route.json.
+        try:
+            self.route = update_route(
+                start, finish, self.delay_var.get(), min_time, max_time
+            )
+        except (ValueError, OSError) as error:
+            self.error_label.configure(text=f"Не вдалося зберегти маршрут: {error}")
+            return
+
+        # Крок 4. Залишаємо старий перегляд словника і кнопки копіювання.
         self.error_label.configure(text="")
-        self.set_output(pprint.pformat(self.route, sort_dicts=False))
-        self.copy_button.configure(state="normal")
-        self.save_button.configure(state="normal")
         print("Збережений маршрут:", self.route)
+
+        # Крок 5. Відкриваємо друге вікно, не закриваючи головну форму.
+        self.open_output_window()
+
+    def open_output_window(self):
+        """Відкриваємо output_frame.py з актуальними параметрами маршруту."""
+        # Не створюємо кілька застарілих вікон одночасно.
+        if self.output_window is not None and self.output_window.winfo_exists():
+            self.output_window.destroy()
+
+        # Передаємо копію, щоб дані вікна не змінювалися випадково.
+        self.output_window = OutputWindow(self, self.route.copy())
 
     def set_output(self, text):
         """Оновити нижнє поле з текстом (воно недоступне для редагування)."""
