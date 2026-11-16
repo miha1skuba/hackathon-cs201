@@ -289,23 +289,34 @@ class RouteFilter:
             key=lambda item: item["transfer_minutes"]
         )
 
+        all_routes = self.all_routes
+
+        if all_routes is None:
+            all_routes = self.routes
+
+        if isinstance(all_routes, dict):
+            all_routes = all_routes.values()
+
+        trains_by_number = {
+            str(self.get_route_number(train)): train
+            for train in all_routes
+        }
+
         resulted_routes = []
 
         for route in results:
-            frst_train = None
-            scnd_train = None
+            first_train = trains_by_number.get(str(route["first_train"]))
 
-            for train in self.all_routes:
-                if train.get_number() == route["first_train"]:
-                    frst_train = train
-
-                if train.get_number() == route["second_train"]:
-                    scnd_train = train
+            second_train = (
+                trains_by_number.get(str(route["second_train"]))
+                if route["second_train"] is not None
+                else None
+            )
 
             resulted_routes.append({
                 **route,
-                "first_train": frst_train,
-                "second_train": scnd_train
+                "first_train": first_train,
+                "second_train": second_train
             })
 
         return resulted_routes

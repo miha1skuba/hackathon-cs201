@@ -1,6 +1,6 @@
 {
     "departure_station": "Львів",
-    "arrival_station": "Київ-Пас.",
+    "arrival_station": "Запоріжжя-1",
     "consider_delays": false,
     "min_transfer_minutes": 15,
     "max_transfer_minutes": 180

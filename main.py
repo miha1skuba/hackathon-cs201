@@ -8,12 +8,12 @@ def main():
     stations, routes = loader.load_all()
 
     matrix = Matrix(stations, routes)
-    
+
     app = TrainRouteApp(
-        matrix
+        matrix=matrix,
+        routes=routes
     )
 
-    # Запускаємо застосунок
     app.mainloop()
 
 

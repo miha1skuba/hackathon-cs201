@@ -171,7 +171,7 @@ class StationField(ctk.CTkFrame):
 class TrainRouteApp(ctk.CTk):
     """Основне вікно. Найважливіша змінна — self.route."""
 
-    def __init__(self, matrix):
+    def __init__(self, matrix, routes):
         super().__init__()
         self.title("Rail Route • Пошук маршруту")
         self.geometry("940x820")
@@ -190,6 +190,8 @@ class TrainRouteApp(ctk.CTk):
         self.build_form()
         self.build_footer()
 
+        
+        self.routes = routes
         self.matrix = matrix
 
     def build_header(self):
@@ -373,9 +375,19 @@ class TrainRouteApp(ctk.CTk):
             self.error_label.configure(text="Час пересадки має бути цілим числом хвилин.")
             return
 
-        possible_routes = self.matrix.search(start, finish)
-        filter = RouteFilter(possible_routes, routes=self.matrix.routes)
-        results = filter.filter_routes(start, finish, min_time, max_time, consider_delays=self.delay_var.get())
+        route_filter = RouteFilter(
+            routes=self.routes,
+            matrix=self.matrix,
+            all_routes=self.routes
+        )
+
+        results = route_filter.filter_routes(
+            start,
+            finish,
+            min_transfer_minutes=min_time,
+            max_transfer_minutes=max_time,
+            consider_delays=self.delay_var.get()
+        )
 
         self.route = update_route(
             start, finish, self.delay_var.get(), min_time, max_time
@@ -389,7 +401,12 @@ class TrainRouteApp(ctk.CTk):
 
         # Крок 5. Відкриваємо друге вікно, не закриваючи головну форму.
     def open_output_window(self, results):
-        if self.output_window is not None and self.output_window.winfo_exists():
+        """Відкриває вікно з результатами пошуку."""
+
+        if (
+            self.output_window is not None
+            and self.output_window.winfo_exists()
+        ):
             self.output_window.destroy()
 
         self.output_window = OutputWindow(
@@ -397,15 +414,6 @@ class TrainRouteApp(ctk.CTk):
             self.route.copy(),
             results
         )
-
-    def open_output_window(self):
-        """Відкриваємо output_frame.py з актуальними параметрами маршруту."""
-        # Не створюємо кілька застарілих вікон одночасно.
-        if self.output_window is not None and self.output_window.winfo_exists():
-            self.output_window.destroy()
-
-        # Передаємо копію, щоб дані вікна не змінювалися випадково.
-        self.output_window = OutputWindow(self, self.route.copy())
 
     def set_output(self, text):
         """Оновити нижнє поле з текстом (воно недоступне для редагування)."""
