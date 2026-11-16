@@ -168,7 +168,7 @@ class StationField(ctk.CTkFrame):
         return "break"
 
 
-class TrainRouteApp(ctk.CTk, matrix):
+class TrainRouteApp(ctk.CTk):
     """Основне вікно. Найважливіша змінна — self.route."""
 
     def __init__(self, matrix):
