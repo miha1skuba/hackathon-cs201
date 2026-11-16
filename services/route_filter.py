@@ -3,9 +3,10 @@ import math
 
 
 class RouteFilter:
-    def __init__(self, routes, matrix=None):
+    def __init__(self, routes, matrix=None, all_routes):
         self.routes = list(routes.values()) if isinstance(routes, dict) else routes
         self.matrix = matrix
+        self.all_routes = all_routes
 
     @staticmethod
     def get_value(obj, key, default=None):
@@ -288,5 +289,24 @@ class RouteFilter:
             key=lambda item: item["transfer_minutes"]
         )
 
-        return results
+        resulted_routes = []
+
+        for route in results:
+            frst_train = None
+            scnd_train = None
+
+            for train in self.all_routes:
+                if train.get_number() == route["first_train"]:
+                    frst_train = train
+
+                if train.get_number() == route["second_train"]:
+                    scnd_train = train
+
+            resulted_routes.append({
+                **route,
+                "first_train": frst_train,
+                "second_train": scnd_train
+            })
+
+        return resulted_routes
 
