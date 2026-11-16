@@ -7,7 +7,6 @@ class RouteFilter:
         self.routes = list(routes.values()) if isinstance(routes, dict) else routes
         self.matrix = matrix
         self.all_routes = all_routes
-        self.matrix = matrix
 
     @staticmethod
     def get_value(obj, key, default=None):
