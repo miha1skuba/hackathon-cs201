@@ -1,0 +1,2507 @@
+[
+  {
+    "number": "1",
+    "paired_with": "2",
+    "type": "флагманський",
+    "typical_delay_minutes": 45,
+    "stations": [
+      {
+        "name": "Харків-Пас.",
+        "arrival_time": null,
+        "departure_time": "14:55"
+      },
+      {
+        "name": "Полтава-Київська",
+        "arrival_time": "17:01",
+        "departure_time": "17:21"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "21:17",
+        "departure_time": "21:37"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "27:52",
+        "departure_time": "28:12"
+      },
+      {
+        "name": "Івано-Франківськ",
+        "arrival_time": "30:17",
+        "departure_time": "30:50"
+      },
+      {
+        "name": "Яремче",
+        "arrival_time": "31:58",
+        "departure_time": "32:01"
+      },
+      {
+        "name": "Рахів",
+        "arrival_time": "33:55",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "2",
+    "paired_with": "1",
+    "type": "флагманський",
+    "typical_delay_minutes": 45,
+    "stations": [
+      {
+        "name": "Рахів",
+        "arrival_time": null,
+        "departure_time": "16:27"
+      },
+      {
+        "name": "Яремче",
+        "arrival_time": "18:30",
+        "departure_time": "18:37"
+      },
+      {
+        "name": "Івано-Франківськ",
+        "arrival_time": "19:40",
+        "departure_time": "20:08"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "22:12",
+        "departure_time": "22:35"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "28:56",
+        "departure_time": "29:20"
+      },
+      {
+        "name": "Полтава-Київська",
+        "arrival_time": "33:19",
+        "departure_time": "33:39"
+      },
+      {
+        "name": "Харків-Пас.",
+        "arrival_time": "35:46",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "7",
+    "paired_with": "8",
+    "type": "флагманський",
+    "typical_delay_minutes": 30,
+    "stations": [
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": null,
+        "departure_time": "20:53"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "27:08",
+        "departure_time": "27:29"
+      },
+      {
+        "name": "Івано-Франківськ",
+        "arrival_time": "29:33",
+        "departure_time": "30:03"
+      },
+      {
+        "name": "Коломия",
+        "arrival_time": "30:50",
+        "departure_time": "30:52"
+      },
+      {
+        "name": "Чернівці",
+        "arrival_time": "32:00",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "8",
+    "paired_with": "7",
+    "type": "флагманський",
+    "typical_delay_minutes": 30,
+    "stations": [
+      {
+        "name": "Чернівці",
+        "arrival_time": null,
+        "departure_time": "19:35"
+      },
+      {
+        "name": "Коломия",
+        "arrival_time": "20:39",
+        "departure_time": "20:42"
+      },
+      {
+        "name": "Івано-Франківськ",
+        "arrival_time": "21:33",
+        "departure_time": "22:16"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "24:22",
+        "departure_time": "24:42"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "31:16",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "17",
+    "paired_with": "18",
+    "type": "флагманський",
+    "typical_delay_minutes": 45,
+    "stations": [
+      {
+        "name": "Харків-Пас.",
+        "arrival_time": null,
+        "departure_time": "14:21"
+      },
+      {
+        "name": "Полтава-Київська",
+        "arrival_time": "16:40",
+        "departure_time": "17:00"
+      },
+      {
+        "name": "Миргород",
+        "arrival_time": "18:41",
+        "departure_time": "18:43"
+      },
+      {
+        "name": "Лубни",
+        "arrival_time": "19:26",
+        "departure_time": "19:28"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "21:36",
+        "departure_time": "21:56"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "28:17",
+        "departure_time": "28:41"
+      },
+      {
+        "name": "Свалява",
+        "arrival_time": "31:51",
+        "departure_time": "31:53"
+      },
+      {
+        "name": "Мукачево",
+        "arrival_time": "32:16",
+        "departure_time": "32:21"
+      },
+      {
+        "name": "Ужгород",
+        "arrival_time": "33:30",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "18",
+    "paired_with": "17",
+    "type": "флагманський",
+    "typical_delay_minutes": 45,
+    "stations": [
+      {
+        "name": "Ужгород",
+        "arrival_time": null,
+        "departure_time": "13:55"
+      },
+      {
+        "name": "Мукачево",
+        "arrival_time": "15:09",
+        "departure_time": "15:14"
+      },
+      {
+        "name": "Свалява",
+        "arrival_time": "15:40",
+        "departure_time": "15:43"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "19:00",
+        "departure_time": "19:30"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "26:08",
+        "departure_time": "26:28"
+      },
+      {
+        "name": "Лубни",
+        "arrival_time": "28:36",
+        "departure_time": "28:38"
+      },
+      {
+        "name": "Миргород",
+        "arrival_time": "29:23",
+        "departure_time": "29:25"
+      },
+      {
+        "name": "Полтава-Київська",
+        "arrival_time": "30:32",
+        "departure_time": "30:52"
+      },
+      {
+        "name": "Харків-Пас.",
+        "arrival_time": "33:00",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "21",
+    "paired_with": "22",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 45,
+    "stations": [
+      {
+        "name": "Харків-Пас.",
+        "arrival_time": null,
+        "departure_time": "21:23"
+      },
+      {
+        "name": "Люботин",
+        "arrival_time": "21:50",
+        "departure_time": "21:52"
+      },
+      {
+        "name": "Полтава-Київська",
+        "arrival_time": "23:32",
+        "departure_time": "23:52"
+      },
+      {
+        "name": "Миргород",
+        "arrival_time": "25:06",
+        "departure_time": "25:08"
+      },
+      {
+        "name": "Лубни",
+        "arrival_time": "25:59",
+        "departure_time": "26:01"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "28:09",
+        "departure_time": "28:29"
+      },
+      {
+        "name": "Козятин-1",
+        "arrival_time": "30:17",
+        "departure_time": "30:19"
+      },
+      {
+        "name": "Вінниця",
+        "arrival_time": "31:04",
+        "departure_time": "31:07"
+      },
+      {
+        "name": "Хмельницький",
+        "arrival_time": "32:56",
+        "departure_time": "32:59"
+      },
+      {
+        "name": "Тернопіль-Пас.",
+        "arrival_time": "34:49",
+        "departure_time": "34:55"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "37:02",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "22",
+    "paired_with": "21",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 45,
+    "stations": [
+      {
+        "name": "Львів",
+        "arrival_time": null,
+        "departure_time": "17:45"
+      },
+      {
+        "name": "Тернопіль-Пас.",
+        "arrival_time": "19:53",
+        "departure_time": "20:00"
+      },
+      {
+        "name": "Хмельницький",
+        "arrival_time": "21:42",
+        "departure_time": "21:47"
+      },
+      {
+        "name": "Вінниця",
+        "arrival_time": "23:42",
+        "departure_time": "23:47"
+      },
+      {
+        "name": "Козятин-1",
+        "arrival_time": "24:30",
+        "departure_time": "24:32"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "26:21",
+        "departure_time": "26:41"
+      },
+      {
+        "name": "Лубни",
+        "arrival_time": "28:55",
+        "departure_time": "28:57"
+      },
+      {
+        "name": "Миргород",
+        "arrival_time": "29:45",
+        "departure_time": "29:47"
+      },
+      {
+        "name": "Полтава-Київська",
+        "arrival_time": "30:55",
+        "departure_time": "31:15"
+      },
+      {
+        "name": "Люботин",
+        "arrival_time": "32:54",
+        "departure_time": "32:56"
+      },
+      {
+        "name": "Харків-Пас.",
+        "arrival_time": "33:24",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "27",
+    "paired_with": "28",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 30,
+    "stations": [
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": null,
+        "departure_time": "19:29"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "26:11",
+        "departure_time": "26:36"
+      },
+      {
+        "name": "Мукачево",
+        "arrival_time": "30:09",
+        "departure_time": "30:14"
+      },
+      {
+        "name": "Чоп",
+        "arrival_time": "31:06",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "28",
+    "paired_with": "27",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 30,
+    "stations": [
+      {
+        "name": "Чоп",
+        "arrival_time": null,
+        "departure_time": "22:30"
+      },
+      {
+        "name": "Мукачево",
+        "arrival_time": "23:22",
+        "departure_time": "23:27"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "26:50",
+        "departure_time": "27:20"
+      },
+      {
+        "name": "Бердичів",
+        "arrival_time": "31:26",
+        "departure_time": "31:28"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "33:30",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "31",
+    "paired_with": "32",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 45,
+    "stations": [
+      {
+        "name": "Львів",
+        "arrival_time": null,
+        "departure_time": "23:20"
+      },
+      {
+        "name": "Бердичів",
+        "arrival_time": "27:23",
+        "departure_time": "27:25"
+      },
+      {
+        "name": "Біла Церква",
+        "arrival_time": "29:18",
+        "departure_time": "29:20"
+      },
+      {
+        "name": "Ім. Тараса Шевченка",
+        "arrival_time": "31:39",
+        "departure_time": "31:41"
+      },
+      {
+        "name": "Знам'янка-Пас.",
+        "arrival_time": "32:45",
+        "departure_time": "33:00"
+      },
+      {
+        "name": "Олександрія",
+        "arrival_time": "33:34",
+        "departure_time": "33:36"
+      },
+      {
+        "name": "Кам'янське-Пас.",
+        "arrival_time": "35:41",
+        "departure_time": "35:43"
+      },
+      {
+        "name": "Дніпро-Головний",
+        "arrival_time": "36:12",
+        "departure_time": "37:35"
+      },
+      {
+        "name": "Синельникове-1",
+        "arrival_time": "38:27",
+        "departure_time": "38:47"
+      },
+      {
+        "name": "Запоріжжя-1",
+        "arrival_time": "39:40",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "32",
+    "paired_with": "31",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 45,
+    "stations": [
+      {
+        "name": "Запоріжжя-1",
+        "arrival_time": null,
+        "departure_time": "11:00"
+      },
+      {
+        "name": "Синельникове-1",
+        "arrival_time": "12:27",
+        "departure_time": "12:29"
+      },
+      {
+        "name": "Дніпро-Головний",
+        "arrival_time": "13:30",
+        "departure_time": "14:23"
+      },
+      {
+        "name": "Кам'янське-Пас.",
+        "arrival_time": "14:54",
+        "departure_time": "14:56"
+      },
+      {
+        "name": "П'ятихатки",
+        "arrival_time": "15:58",
+        "departure_time": "16:00"
+      },
+      {
+        "name": "Олександрія",
+        "arrival_time": "17:16",
+        "departure_time": "17:18"
+      },
+      {
+        "name": "Знам'янка-Пас.",
+        "arrival_time": "17:55",
+        "departure_time": "18:15"
+      },
+      {
+        "name": "Ім. Тараса Шевченка",
+        "arrival_time": "20:37",
+        "departure_time": "20:46"
+      },
+      {
+        "name": "Біла Церква",
+        "arrival_time": "23:15",
+        "departure_time": "23:17"
+      },
+      {
+        "name": "Бердичів",
+        "arrival_time": "25:25",
+        "departure_time": "25:27"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "29:47",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "39",
+    "paired_with": "40",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 60,
+    "stations": [
+      {
+        "name": "Мукачево",
+        "arrival_time": null,
+        "departure_time": "14:21"
+      },
+      {
+        "name": "Свалява",
+        "arrival_time": "14:47",
+        "departure_time": "14:49"
+      },
+      {
+        "name": "Стрий",
+        "arrival_time": "17:02",
+        "departure_time": "17:04"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "18:02",
+        "departure_time": "18:30"
+      },
+      {
+        "name": "Шепетівка",
+        "arrival_time": "21:48",
+        "departure_time": "21:50"
+      },
+      {
+        "name": "Бердичів",
+        "arrival_time": "23:18",
+        "departure_time": "23:20"
+      },
+      {
+        "name": "Біла Церква",
+        "arrival_time": "25:29",
+        "departure_time": "25:31"
+      },
+      {
+        "name": "Ім. Тараса Шевченка",
+        "arrival_time": "28:03",
+        "departure_time": "28:10"
+      },
+      {
+        "name": "Знам'янка-Пас.",
+        "arrival_time": "29:39",
+        "departure_time": "30:00"
+      },
+      {
+        "name": "Олександрія",
+        "arrival_time": "30:44",
+        "departure_time": "30:46"
+      },
+      {
+        "name": "П'ятихатки",
+        "arrival_time": "32:29",
+        "departure_time": "32:31"
+      },
+      {
+        "name": "Кам'янське-Пас.",
+        "arrival_time": "33:26",
+        "departure_time": "33:28"
+      },
+      {
+        "name": "Дніпро-Головний",
+        "arrival_time": "34:00",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "40",
+    "paired_with": "39",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 60,
+    "stations": [
+      {
+        "name": "Дніпро-Головний",
+        "arrival_time": null,
+        "departure_time": "12:46"
+      },
+      {
+        "name": "Кам'янське-Пас.",
+        "arrival_time": "13:18",
+        "departure_time": "13:20"
+      },
+      {
+        "name": "П'ятихатки",
+        "arrival_time": "14:18",
+        "departure_time": "14:20"
+      },
+      {
+        "name": "Олександрія",
+        "arrival_time": "15:40",
+        "departure_time": "15:42"
+      },
+      {
+        "name": "Знам'янка-Пас.",
+        "arrival_time": "16:22",
+        "departure_time": "16:37"
+      },
+      {
+        "name": "Ім. Тараса Шевченка",
+        "arrival_time": "18:00",
+        "departure_time": "18:05"
+      },
+      {
+        "name": "Біла Церква",
+        "arrival_time": "23:12",
+        "departure_time": "23:14"
+      },
+      {
+        "name": "Бердичів",
+        "arrival_time": "25:25",
+        "departure_time": "25:27"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "30:17",
+        "departure_time": "31:12"
+      },
+      {
+        "name": "Стрий",
+        "arrival_time": "32:18",
+        "departure_time": "32:36"
+      },
+      {
+        "name": "Свалява",
+        "arrival_time": "35:30",
+        "departure_time": "35:35"
+      },
+      {
+        "name": "Мукачево",
+        "arrival_time": "36:05",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "41",
+    "paired_with": "42",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 60,
+    "stations": [
+      {
+        "name": "Дніпро-Головний",
+        "arrival_time": null,
+        "departure_time": "14:40"
+      },
+      {
+        "name": "Кам'янське-Пас.",
+        "arrival_time": "15:19",
+        "departure_time": "15:21"
+      },
+      {
+        "name": "П'ятихатки",
+        "arrival_time": "17:07",
+        "departure_time": "17:09"
+      },
+      {
+        "name": "Олександрія",
+        "arrival_time": "18:42",
+        "departure_time": "18:44"
+      },
+      {
+        "name": "Знам'янка-Пас.",
+        "arrival_time": "19:48",
+        "departure_time": "20:08"
+      },
+      {
+        "name": "Ім. Тараса Шевченка",
+        "arrival_time": "21:31",
+        "departure_time": "21:53"
+      },
+      {
+        "name": "Миронівка",
+        "arrival_time": "23:37",
+        "departure_time": "23:39"
+      },
+      {
+        "name": "Біла Церква",
+        "arrival_time": "24:29",
+        "departure_time": "24:31"
+      },
+      {
+        "name": "Козятин-1",
+        "arrival_time": "26:00",
+        "departure_time": "26:15"
+      },
+      {
+        "name": "Вінниця",
+        "arrival_time": "27:06",
+        "departure_time": "27:11"
+      },
+      {
+        "name": "Хмельницький",
+        "arrival_time": "29:09",
+        "departure_time": "29:14"
+      },
+      {
+        "name": "Тернопіль-Пас.",
+        "arrival_time": "31:18",
+        "departure_time": "31:24"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "33:33",
+        "departure_time": "34:02"
+      },
+      {
+        "name": "Дрогобич",
+        "arrival_time": "35:27",
+        "departure_time": "35:53"
+      },
+      {
+        "name": "Трускавець",
+        "arrival_time": "36:10",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "42",
+    "paired_with": "41",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 60,
+    "stations": [
+      {
+        "name": "Трускавець",
+        "arrival_time": null,
+        "departure_time": "13:07"
+      },
+      {
+        "name": "Дрогобич",
+        "arrival_time": "13:23",
+        "departure_time": "13:53"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "15:33",
+        "departure_time": "16:08"
+      },
+      {
+        "name": "Тернопіль-Пас.",
+        "arrival_time": "18:19",
+        "departure_time": "18:27"
+      },
+      {
+        "name": "Хмельницький",
+        "arrival_time": "20:18",
+        "departure_time": "20:23"
+      },
+      {
+        "name": "Вінниця",
+        "arrival_time": "22:21",
+        "departure_time": "22:26"
+      },
+      {
+        "name": "Козятин-1",
+        "arrival_time": "23:17",
+        "departure_time": "23:32"
+      },
+      {
+        "name": "Біла Церква",
+        "arrival_time": "25:12",
+        "departure_time": "25:14"
+      },
+      {
+        "name": "Миронівка",
+        "arrival_time": "26:17",
+        "departure_time": "26:19"
+      },
+      {
+        "name": "Ім. Тараса Шевченка",
+        "arrival_time": "27:44",
+        "departure_time": "27:59"
+      },
+      {
+        "name": "Знам'янка-Пас.",
+        "arrival_time": "29:18",
+        "departure_time": "29:33"
+      },
+      {
+        "name": "Олександрія",
+        "arrival_time": "30:16",
+        "departure_time": "30:18"
+      },
+      {
+        "name": "П'ятихатки",
+        "arrival_time": "31:36",
+        "departure_time": "31:38"
+      },
+      {
+        "name": "Кам'янське-Пас.",
+        "arrival_time": "32:46",
+        "departure_time": "32:48"
+      },
+      {
+        "name": "Дніпро-Головний",
+        "arrival_time": "33:20",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "43",
+    "paired_with": "44",
+    "type": "флагманський",
+    "typical_delay_minutes": 30,
+    "stations": [
+      {
+        "name": "Черкаси",
+        "arrival_time": null,
+        "departure_time": "18:20"
+      },
+      {
+        "name": "Ім. Тараса Шевченка",
+        "arrival_time": "18:59",
+        "departure_time": "19:23"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "22:12",
+        "departure_time": "22:34"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "29:10",
+        "departure_time": "29:30"
+      },
+      {
+        "name": "Стрий",
+        "arrival_time": "30:30",
+        "departure_time": "30:50"
+      },
+      {
+        "name": "Івано-Франківськ",
+        "arrival_time": "32:58",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "44",
+    "paired_with": "43",
+    "type": "флагманський",
+    "typical_delay_minutes": 30,
+    "stations": [
+      {
+        "name": "Івано-Франківськ",
+        "arrival_time": null,
+        "departure_time": "19:39"
+      },
+      {
+        "name": "Стрий",
+        "arrival_time": "21:47",
+        "departure_time": "22:07"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "23:09",
+        "departure_time": "23:30"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "30:02",
+        "departure_time": "30:45"
+      },
+      {
+        "name": "Ім. Тараса Шевченка",
+        "arrival_time": "33:30",
+        "departure_time": "33:54"
+      },
+      {
+        "name": "Черкаси",
+        "arrival_time": "34:40",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "75",
+    "paired_with": "76",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 30,
+    "stations": [
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": null,
+        "departure_time": "22:45"
+      },
+      {
+        "name": "Ім. Тараса Шевченка",
+        "arrival_time": "25:14",
+        "departure_time": "25:16"
+      },
+      {
+        "name": "Знам'янка-Пас.",
+        "arrival_time": "26:24",
+        "departure_time": "26:26"
+      },
+      {
+        "name": "Кривий Ріг-Головний",
+        "arrival_time": "29:45",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "76",
+    "paired_with": "75",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 30,
+    "stations": [
+      {
+        "name": "Кривий Ріг-Головний",
+        "arrival_time": null,
+        "departure_time": "22:17"
+      },
+      {
+        "name": "Знам'янка-Пас.",
+        "arrival_time": "25:32",
+        "departure_time": "25:34"
+      },
+      {
+        "name": "Ім. Тараса Шевченка",
+        "arrival_time": "26:43",
+        "departure_time": "26:45"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "29:17",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "97",
+    "paired_with": "98",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 30,
+    "stations": [
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": null,
+        "departure_time": "22:42"
+      },
+      {
+        "name": "Шепетівка",
+        "arrival_time": "26:38",
+        "departure_time": "27:09"
+      },
+      {
+        "name": "Здолбунів-Пас.",
+        "arrival_time": "28:40",
+        "departure_time": "28:58"
+      },
+      {
+        "name": "Рівне",
+        "arrival_time": "29:13",
+        "departure_time": "29:22"
+      },
+      {
+        "name": "Луцьк",
+        "arrival_time": "30:40",
+        "departure_time": "31:02"
+      },
+      {
+        "name": "Ковель-Пас.",
+        "arrival_time": "32:52",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "98",
+    "paired_with": "97",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 30,
+    "stations": [
+      {
+        "name": "Ковель-Пас.",
+        "arrival_time": null,
+        "departure_time": "20:20"
+      },
+      {
+        "name": "Луцьк",
+        "arrival_time": "22:00",
+        "departure_time": "22:22"
+      },
+      {
+        "name": "Рівне",
+        "arrival_time": "23:34",
+        "departure_time": "23:39"
+      },
+      {
+        "name": "Здолбунів-Пас.",
+        "arrival_time": "23:53",
+        "departure_time": "24:10"
+      },
+      {
+        "name": "Шепетівка",
+        "arrival_time": "25:20",
+        "departure_time": "25:51"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "29:55",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "105",
+    "paired_with": "106",
+    "type": "флагманський",
+    "typical_delay_minutes": 15,
+    "stations": [
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": null,
+        "departure_time": "22:10"
+      },
+      {
+        "name": "Козятин-1",
+        "arrival_time": "24:09",
+        "departure_time": "24:11"
+      },
+      {
+        "name": "Вінниця",
+        "arrival_time": "24:53",
+        "departure_time": "24:55"
+      },
+      {
+        "name": "Жмеринка-Пас.",
+        "arrival_time": "25:29",
+        "departure_time": "25:31"
+      },
+      {
+        "name": "Вапнярка",
+        "arrival_time": "26:23",
+        "departure_time": "26:25"
+      },
+      {
+        "name": "Подільськ",
+        "arrival_time": "28:01",
+        "departure_time": "28:03"
+      },
+      {
+        "name": "Роздільна-1",
+        "arrival_time": "29:27",
+        "departure_time": "29:29"
+      },
+      {
+        "name": "Одеса-Головна",
+        "arrival_time": "30:52",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "106",
+    "paired_with": "105",
+    "type": "флагманський",
+    "typical_delay_minutes": 15,
+    "stations": [
+      {
+        "name": "Одеса-Головна",
+        "arrival_time": null,
+        "departure_time": "22:08"
+      },
+      {
+        "name": "Роздільна-1",
+        "arrival_time": "23:09",
+        "departure_time": "23:11"
+      },
+      {
+        "name": "Подільськ",
+        "arrival_time": "24:25",
+        "departure_time": "24:27"
+      },
+      {
+        "name": "Вапнярка",
+        "arrival_time": "26:05",
+        "departure_time": "26:07"
+      },
+      {
+        "name": "Жмеринка-Пас.",
+        "arrival_time": "27:06",
+        "departure_time": "27:08"
+      },
+      {
+        "name": "Вінниця",
+        "arrival_time": "27:44",
+        "departure_time": "27:46"
+      },
+      {
+        "name": "Козятин-1",
+        "arrival_time": "28:25",
+        "departure_time": "28:27"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "30:57",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "109",
+    "paired_with": "110",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 45,
+    "stations": [
+      {
+        "name": "Миколаїв Пас.",
+        "arrival_time": null,
+        "departure_time": "17:31"
+      },
+      {
+        "name": "Долинська",
+        "arrival_time": "20:18",
+        "departure_time": "20:23"
+      },
+      {
+        "name": "Знам'янка-Пас.",
+        "arrival_time": "22:10",
+        "departure_time": "23:00"
+      },
+      {
+        "name": "Ім. Тараса Шевченка",
+        "arrival_time": "24:42",
+        "departure_time": "25:02"
+      },
+      {
+        "name": "Біла Церква",
+        "arrival_time": "27:27",
+        "departure_time": "27:29"
+      },
+      {
+        "name": "Козятин-1",
+        "arrival_time": "29:05",
+        "departure_time": "29:20"
+      },
+      {
+        "name": "Вінниця",
+        "arrival_time": "30:11",
+        "departure_time": "30:14"
+      },
+      {
+        "name": "Хмельницький",
+        "arrival_time": "32:07",
+        "departure_time": "32:12"
+      },
+      {
+        "name": "Тернопіль-Пас.",
+        "arrival_time": "34:05",
+        "departure_time": "34:10"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "36:18",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "110",
+    "paired_with": "109",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 60,
+    "stations": [
+      {
+        "name": "Львів",
+        "arrival_time": null,
+        "departure_time": "16:41"
+      },
+      {
+        "name": "Тернопіль-Пас.",
+        "arrival_time": "18:46",
+        "departure_time": "18:51"
+      },
+      {
+        "name": "Хмельницький",
+        "arrival_time": "20:37",
+        "departure_time": "20:42"
+      },
+      {
+        "name": "Вінниця",
+        "arrival_time": "22:38",
+        "departure_time": "22:43"
+      },
+      {
+        "name": "Козятин-1",
+        "arrival_time": "23:40",
+        "departure_time": "23:57"
+      },
+      {
+        "name": "Біла Церква",
+        "arrival_time": "25:39",
+        "departure_time": "25:41"
+      },
+      {
+        "name": "Ім. Тараса Шевченка",
+        "arrival_time": "28:37",
+        "departure_time": "29:10"
+      },
+      {
+        "name": "Знам'янка-Пас.",
+        "arrival_time": "30:40",
+        "departure_time": "31:50"
+      },
+      {
+        "name": "Долинська",
+        "arrival_time": "33:40",
+        "departure_time": "33:45"
+      },
+      {
+        "name": "Миколаїв Пас.",
+        "arrival_time": "37:31",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "127",
+    "paired_with": "128",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 60,
+    "stations": [
+      {
+        "name": "Дніпро-Головний",
+        "arrival_time": null,
+        "departure_time": "17:26"
+      },
+      {
+        "name": "Кам'янське-Пас.",
+        "arrival_time": "18:00",
+        "departure_time": "18:02"
+      },
+      {
+        "name": "П'ятихатки",
+        "arrival_time": "19:28",
+        "departure_time": "19:30"
+      },
+      {
+        "name": "Олександрія",
+        "arrival_time": "21:00",
+        "departure_time": "21:02"
+      },
+      {
+        "name": "Знам'янка-Пас.",
+        "arrival_time": "21:45",
+        "departure_time": "22:08"
+      },
+      {
+        "name": "Кропивницький",
+        "arrival_time": "22:52",
+        "departure_time": "22:57"
+      },
+      {
+        "name": "Помічна",
+        "arrival_time": "24:10",
+        "departure_time": "24:13"
+      },
+      {
+        "name": "Вапнярка",
+        "arrival_time": "29:23",
+        "departure_time": "29:25"
+      },
+      {
+        "name": "Жмеринка-Пас.",
+        "arrival_time": "30:40",
+        "departure_time": "31:07"
+      },
+      {
+        "name": "Хмельницький",
+        "arrival_time": "32:34",
+        "departure_time": "32:37"
+      },
+      {
+        "name": "Тернопіль-Пас.",
+        "arrival_time": "34:34",
+        "departure_time": "34:39"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "36:45",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "128",
+    "paired_with": "127",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 45,
+    "stations": [
+      {
+        "name": "Львів",
+        "arrival_time": null,
+        "departure_time": "14:14"
+      },
+      {
+        "name": "Тернопіль-Пас.",
+        "arrival_time": "16:23",
+        "departure_time": "16:28"
+      },
+      {
+        "name": "Хмельницький",
+        "arrival_time": "18:20",
+        "departure_time": "18:25"
+      },
+      {
+        "name": "Жмеринка-Пас.",
+        "arrival_time": "20:01",
+        "departure_time": "20:23"
+      },
+      {
+        "name": "Вапнярка",
+        "arrival_time": "21:44",
+        "departure_time": "21:57"
+      },
+      {
+        "name": "Помічна",
+        "arrival_time": "26:51",
+        "departure_time": "26:54"
+      },
+      {
+        "name": "Кропивницький",
+        "arrival_time": "28:03",
+        "departure_time": "28:08"
+      },
+      {
+        "name": "Знам'янка-Пас.",
+        "arrival_time": "28:57",
+        "departure_time": "29:17"
+      },
+      {
+        "name": "Олександрія",
+        "arrival_time": "29:57",
+        "departure_time": "29:59"
+      },
+      {
+        "name": "П'ятихатки",
+        "arrival_time": "31:26",
+        "departure_time": "31:28"
+      },
+      {
+        "name": "Кам'янське-Пас.",
+        "arrival_time": "32:30",
+        "departure_time": "32:32"
+      },
+      {
+        "name": "Дніпро-Головний",
+        "arrival_time": "33:04",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "129",
+    "paired_with": "130",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 60,
+    "stations": [
+      {
+        "name": "Полтава-Півд.",
+        "arrival_time": null,
+        "departure_time": "17:10"
+      },
+      {
+        "name": "Полтава-Київська",
+        "arrival_time": "17:34",
+        "departure_time": "17:39"
+      },
+      {
+        "name": "Миргород",
+        "arrival_time": "18:56",
+        "departure_time": "18:58"
+      },
+      {
+        "name": "Лубни",
+        "arrival_time": "20:51",
+        "departure_time": "20:53"
+      },
+      {
+        "name": "Гребінка",
+        "arrival_time": "21:24",
+        "departure_time": "21:26"
+      },
+      {
+        "name": "Дарниця",
+        "arrival_time": "22:52",
+        "departure_time": "22:54"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "23:14",
+        "departure_time": "23:34"
+      },
+      {
+        "name": "Козятин-1",
+        "arrival_time": "25:23",
+        "departure_time": "25:25"
+      },
+      {
+        "name": "Вінниця",
+        "arrival_time": "26:10",
+        "departure_time": "26:13"
+      },
+      {
+        "name": "Хмельницький",
+        "arrival_time": "28:15",
+        "departure_time": "28:30"
+      },
+      {
+        "name": "Тернопіль-Пас.",
+        "arrival_time": "30:12",
+        "departure_time": "30:17"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "32:09",
+        "departure_time": "32:34"
+      },
+      {
+        "name": "Стрий",
+        "arrival_time": "33:33",
+        "departure_time": "33:35"
+      },
+      {
+        "name": "Свалява",
+        "arrival_time": "35:51",
+        "departure_time": "35:55"
+      },
+      {
+        "name": "Мукачево",
+        "arrival_time": "36:21",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "130",
+    "paired_with": "129",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 45,
+    "stations": [
+      {
+        "name": "Мукачево",
+        "arrival_time": null,
+        "departure_time": "17:20"
+      },
+      {
+        "name": "Свалява",
+        "arrival_time": "17:44",
+        "departure_time": "17:46"
+      },
+      {
+        "name": "Стрий",
+        "arrival_time": "19:58",
+        "departure_time": "20:00"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "21:00",
+        "departure_time": "21:30"
+      },
+      {
+        "name": "Тернопіль-Пас.",
+        "arrival_time": "23:24",
+        "departure_time": "23:28"
+      },
+      {
+        "name": "Хмельницький",
+        "arrival_time": "25:34",
+        "departure_time": "25:49"
+      },
+      {
+        "name": "Вінниця",
+        "arrival_time": "27:36",
+        "departure_time": "27:38"
+      },
+      {
+        "name": "Козятин-1",
+        "arrival_time": "28:17",
+        "departure_time": "28:19"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "30:16",
+        "departure_time": "30:36"
+      },
+      {
+        "name": "Гребінка",
+        "arrival_time": "32:10",
+        "departure_time": "32:12"
+      },
+      {
+        "name": "Лубни",
+        "arrival_time": "32:41",
+        "departure_time": "32:43"
+      },
+      {
+        "name": "Миргород",
+        "arrival_time": "34:33",
+        "departure_time": "34:35"
+      },
+      {
+        "name": "Полтава-Київська",
+        "arrival_time": "35:42",
+        "departure_time": "35:47"
+      },
+      {
+        "name": "Полтава-Півд.",
+        "arrival_time": "36:08",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "131",
+    "paired_with": "132",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 45,
+    "stations": [
+      {
+        "name": "Кременчук-Пас.",
+        "arrival_time": null,
+        "departure_time": "17:37"
+      },
+      {
+        "name": "Лубни",
+        "arrival_time": "20:51",
+        "departure_time": "20:53"
+      },
+      {
+        "name": "Гребінка",
+        "arrival_time": "21:24",
+        "departure_time": "21:26"
+      },
+      {
+        "name": "Дарниця",
+        "arrival_time": "22:52",
+        "departure_time": "22:54"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "23:14",
+        "departure_time": "23:34"
+      },
+      {
+        "name": "Козятин-1",
+        "arrival_time": "25:23",
+        "departure_time": "25:25"
+      },
+      {
+        "name": "Вінниця",
+        "arrival_time": "26:10",
+        "departure_time": "26:13"
+      },
+      {
+        "name": "Хмельницький",
+        "arrival_time": "28:15",
+        "departure_time": "28:30"
+      },
+      {
+        "name": "Тернопіль-Пас.",
+        "arrival_time": "30:12",
+        "departure_time": "30:17"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "32:09",
+        "departure_time": "32:34"
+      },
+      {
+        "name": "Стрий",
+        "arrival_time": "33:33",
+        "departure_time": "33:35"
+      },
+      {
+        "name": "Свалява",
+        "arrival_time": "35:51",
+        "departure_time": "35:55"
+      },
+      {
+        "name": "Мукачево",
+        "arrival_time": "36:21",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "132",
+    "paired_with": "131",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 60,
+    "stations": [
+      {
+        "name": "Мукачево",
+        "arrival_time": null,
+        "departure_time": "17:20"
+      },
+      {
+        "name": "Свалява",
+        "arrival_time": "17:44",
+        "departure_time": "17:46"
+      },
+      {
+        "name": "Стрий",
+        "arrival_time": "19:58",
+        "departure_time": "20:00"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "21:00",
+        "departure_time": "21:30"
+      },
+      {
+        "name": "Тернопіль-Пас.",
+        "arrival_time": "23:24",
+        "departure_time": "23:28"
+      },
+      {
+        "name": "Хмельницький",
+        "arrival_time": "25:34",
+        "departure_time": "25:49"
+      },
+      {
+        "name": "Вінниця",
+        "arrival_time": "27:36",
+        "departure_time": "27:38"
+      },
+      {
+        "name": "Козятин-1",
+        "arrival_time": "28:17",
+        "departure_time": "28:19"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "30:16",
+        "departure_time": "30:36"
+      },
+      {
+        "name": "Гребінка",
+        "arrival_time": "32:10",
+        "departure_time": "32:12"
+      },
+      {
+        "name": "Лубни",
+        "arrival_time": "32:41",
+        "departure_time": "32:43"
+      },
+      {
+        "name": "Кременчук-Пас.",
+        "arrival_time": "36:24",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "141",
+    "paired_with": "142",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 45,
+    "stations": [
+      {
+        "name": "Чернігів",
+        "arrival_time": null,
+        "departure_time": "13:27"
+      },
+      {
+        "name": "Ніжин",
+        "arrival_time": "14:41",
+        "departure_time": "14:43"
+      },
+      {
+        "name": "Дарниця",
+        "arrival_time": "16:02",
+        "departure_time": "16:04"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "16:23",
+        "departure_time": "17:04"
+      },
+      {
+        "name": "Фастів-1",
+        "arrival_time": "17:55",
+        "departure_time": "17:57"
+      },
+      {
+        "name": "Козятин-1",
+        "arrival_time": "19:00",
+        "departure_time": "19:02"
+      },
+      {
+        "name": "Вінниця",
+        "arrival_time": "19:52",
+        "departure_time": "19:55"
+      },
+      {
+        "name": "Хмельницький",
+        "arrival_time": "21:40",
+        "departure_time": "21:45"
+      },
+      {
+        "name": "Тернопіль-Пас.",
+        "arrival_time": "23:30",
+        "departure_time": "23:35"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "25:28",
+        "departure_time": "25:51"
+      },
+      {
+        "name": "Івано-Франківськ",
+        "arrival_time": "28:00",
+        "departure_time": "29:08"
+      },
+      {
+        "name": "Яремче",
+        "arrival_time": "30:22",
+        "departure_time": "30:27"
+      },
+      {
+        "name": "Рахів",
+        "arrival_time": "32:24",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "142",
+    "paired_with": "141",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 45,
+    "stations": [
+      {
+        "name": "Рахів",
+        "arrival_time": null,
+        "departure_time": "17:09"
+      },
+      {
+        "name": "Яремче",
+        "arrival_time": "19:14",
+        "departure_time": "19:23"
+      },
+      {
+        "name": "Івано-Франківськ",
+        "arrival_time": "20:29",
+        "departure_time": "21:27"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "23:32",
+        "departure_time": "23:52"
+      },
+      {
+        "name": "Тернопіль-Пас.",
+        "arrival_time": "25:49",
+        "departure_time": "25:54"
+      },
+      {
+        "name": "Хмельницький",
+        "arrival_time": "27:30",
+        "departure_time": "27:33"
+      },
+      {
+        "name": "Вінниця",
+        "arrival_time": "29:18",
+        "departure_time": "29:21"
+      },
+      {
+        "name": "Козятин-1",
+        "arrival_time": "30:05",
+        "departure_time": "30:07"
+      },
+      {
+        "name": "Фастів-1",
+        "arrival_time": "31:11",
+        "departure_time": "31:13"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "32:24",
+        "departure_time": "33:06"
+      },
+      {
+        "name": "Дарниця",
+        "arrival_time": "33:26",
+        "departure_time": "33:28"
+      },
+      {
+        "name": "Ніжин",
+        "arrival_time": "34:46",
+        "departure_time": "34:48"
+      },
+      {
+        "name": "Чернігів",
+        "arrival_time": "36:03",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "143",
+    "paired_with": "144",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 60,
+    "stations": [
+      {
+        "name": "Конотоп-Пас.",
+        "arrival_time": null,
+        "departure_time": "11:30"
+      },
+      {
+        "name": "Бахмач-Пас.",
+        "arrival_time": "12:03",
+        "departure_time": "12:21"
+      },
+      {
+        "name": "Ніжин",
+        "arrival_time": "13:23",
+        "departure_time": "13:28"
+      },
+      {
+        "name": "Дарниця",
+        "arrival_time": "15:12",
+        "departure_time": "15:17"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "15:42",
+        "departure_time": "16:48"
+      },
+      {
+        "name": "Козятин-1",
+        "arrival_time": "19:26",
+        "departure_time": "19:28"
+      },
+      {
+        "name": "Вінниця",
+        "arrival_time": "20:31",
+        "departure_time": "20:36"
+      },
+      {
+        "name": "Хмельницький",
+        "arrival_time": "22:49",
+        "departure_time": "23:04"
+      },
+      {
+        "name": "Тернопіль-Пас.",
+        "arrival_time": "25:10",
+        "departure_time": "25:30"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "27:44",
+        "departure_time": "28:23"
+      },
+      {
+        "name": "Івано-Франківськ",
+        "arrival_time": "30:40",
+        "departure_time": "31:29"
+      },
+      {
+        "name": "Яремче",
+        "arrival_time": "32:39",
+        "departure_time": "32:46"
+      },
+      {
+        "name": "Рахів",
+        "arrival_time": "34:43",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "144",
+    "paired_with": "143",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 60,
+    "stations": [
+      {
+        "name": "Рахів",
+        "arrival_time": null,
+        "departure_time": "13:28"
+      },
+      {
+        "name": "Яремче",
+        "arrival_time": "15:17",
+        "departure_time": "15:20"
+      },
+      {
+        "name": "Івано-Франківськ",
+        "arrival_time": "16:23",
+        "departure_time": "16:36"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "18:37",
+        "departure_time": "18:57"
+      },
+      {
+        "name": "Тернопіль-Пас.",
+        "arrival_time": "21:01",
+        "departure_time": "21:06"
+      },
+      {
+        "name": "Хмельницький",
+        "arrival_time": "22:46",
+        "departure_time": "23:01"
+      },
+      {
+        "name": "Вінниця",
+        "arrival_time": "25:02",
+        "departure_time": "25:07"
+      },
+      {
+        "name": "Козятин-1",
+        "arrival_time": "26:02",
+        "departure_time": "26:04"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "28:29",
+        "departure_time": "30:05"
+      },
+      {
+        "name": "Дарниця",
+        "arrival_time": "30:29",
+        "departure_time": "30:34"
+      },
+      {
+        "name": "Ніжин",
+        "arrival_time": "32:13",
+        "departure_time": "32:22"
+      },
+      {
+        "name": "Бахмач-Пас.",
+        "arrival_time": "33:39",
+        "departure_time": "33:57"
+      },
+      {
+        "name": "Конотоп-Пас.",
+        "arrival_time": "34:30",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "203",
+    "paired_with": "204",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 15,
+    "stations": [
+      {
+        "name": "Херсон",
+        "arrival_time": null,
+        "departure_time": "11:23"
+      },
+      {
+        "name": "Миколаїв Пас.",
+        "arrival_time": "13:00",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "204",
+    "paired_with": "203",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 15,
+    "stations": [
+      {
+        "name": "Миколаїв Пас.",
+        "arrival_time": null,
+        "departure_time": "09:30"
+      },
+      {
+        "name": "Херсон",
+        "arrival_time": "11:08",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "723",
+    "paired_with": "724",
+    "type": "інтерсіті",
+    "typical_delay_minutes": 15,
+    "stations": [
+      {
+        "name": "Харків-Пас.",
+        "arrival_time": null,
+        "departure_time": "14:38"
+      },
+      {
+        "name": "Полтава-Київська",
+        "arrival_time": "16:13",
+        "departure_time": "16:15"
+      },
+      {
+        "name": "Миргород",
+        "arrival_time": "17:07",
+        "departure_time": "17:09"
+      },
+      {
+        "name": "Лубни",
+        "arrival_time": "17:46",
+        "departure_time": "17:48"
+      },
+      {
+        "name": "Гребінка",
+        "arrival_time": "18:09",
+        "departure_time": "18:10"
+      },
+      {
+        "name": "Дарниця",
+        "arrival_time": "19:09",
+        "departure_time": "19:11"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "19:32",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "724",
+    "paired_with": "723",
+    "type": "інтерсіті",
+    "typical_delay_minutes": 15,
+    "stations": [
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": null,
+        "departure_time": "16:00"
+      },
+      {
+        "name": "Дарниця",
+        "arrival_time": "16:18",
+        "departure_time": "16:20"
+      },
+      {
+        "name": "Лубни",
+        "arrival_time": "17:45",
+        "departure_time": "17:47"
+      },
+      {
+        "name": "Миргород",
+        "arrival_time": "18:25",
+        "departure_time": "18:32"
+      },
+      {
+        "name": "Полтава-Київська",
+        "arrival_time": "19:24",
+        "departure_time": "19:26"
+      },
+      {
+        "name": "Харків-Пас.",
+        "arrival_time": "21:03",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "49",
+    "paired_with": "50",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 45,
+    "stations": [
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": null,
+        "departure_time": "21:29"
+      },
+      {
+        "name": "Козятин-1",
+        "arrival_time": "23:24",
+        "departure_time": "23:26"
+      },
+      {
+        "name": "Вінниця",
+        "arrival_time": "24:17",
+        "departure_time": "24:22"
+      },
+      {
+        "name": "Хмельницький",
+        "arrival_time": "26:17",
+        "departure_time": "26:22"
+      },
+      {
+        "name": "Тернопіль-Пас.",
+        "arrival_time": "28:03",
+        "departure_time": "28:08"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "30:00",
+        "departure_time": "30:40"
+      },
+      {
+        "name": "Дрогобич",
+        "arrival_time": "32:06",
+        "departure_time": "32:29"
+      },
+      {
+        "name": "Трускавець",
+        "arrival_time": "32:51",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "50",
+    "paired_with": "49",
+    "type": "далекого сполучення",
+    "typical_delay_minutes": 45,
+    "stations": [
+      {
+        "name": "Трускавець",
+        "arrival_time": null,
+        "departure_time": "20:48"
+      },
+      {
+        "name": "Дрогобич",
+        "arrival_time": "21:04",
+        "departure_time": "21:29"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "22:50",
+        "departure_time": "23:20"
+      },
+      {
+        "name": "Тернопіль-Пас.",
+        "arrival_time": "25:16",
+        "departure_time": "25:21"
+      },
+      {
+        "name": "Хмельницький",
+        "arrival_time": "26:59",
+        "departure_time": "27:04"
+      },
+      {
+        "name": "Вінниця",
+        "arrival_time": "28:53",
+        "departure_time": "28:58"
+      },
+      {
+        "name": "Козятин-1",
+        "arrival_time": "29:40",
+        "departure_time": "29:42"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "32:05",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "91",
+    "paired_with": "92",
+    "type": "флагманський",
+    "typical_delay_minutes": 30,
+    "stations": [
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": null,
+        "departure_time": "23:04"
+      },
+      {
+        "name": "Шепетівка",
+        "arrival_time": "27:16",
+        "departure_time": "27:31"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "30:50",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "92",
+    "paired_with": "91",
+    "type": "флагманський",
+    "typical_delay_minutes": 30,
+    "stations": [
+      {
+        "name": "Львів",
+        "arrival_time": null,
+        "departure_time": "23:00"
+      },
+      {
+        "name": "Шепетівка",
+        "arrival_time": "25:59",
+        "departure_time": "26:14"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "30:23",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "95",
+    "paired_with": "96",
+    "type": "флагманський",
+    "typical_delay_minutes": 45,
+    "stations": [
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": null,
+        "departure_time": "21:09"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "27:36",
+        "departure_time": "27:57"
+      },
+      {
+        "name": "Івано-Франківськ",
+        "arrival_time": "29:59",
+        "departure_time": "30:12"
+      },
+      {
+        "name": "Яремче",
+        "arrival_time": "31:16",
+        "departure_time": "31:19"
+      },
+      {
+        "name": "Рахів",
+        "arrival_time": "33:11",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "96",
+    "paired_with": "95",
+    "type": "флагманський",
+    "typical_delay_minutes": 45,
+    "stations": [
+      {
+        "name": "Рахів",
+        "arrival_time": null,
+        "departure_time": "21:22"
+      },
+      {
+        "name": "Яремче",
+        "arrival_time": "23:16",
+        "departure_time": "23:19"
+      },
+      {
+        "name": "Івано-Франківськ",
+        "arrival_time": "24:22",
+        "departure_time": "24:37"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "26:40",
+        "departure_time": "27:20"
+      },
+      {
+        "name": "Бердичів",
+        "arrival_time": "31:26",
+        "departure_time": "31:28"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "33:30",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "743",
+    "paired_with": "744",
+    "type": "інтерсіті",
+    "typical_delay_minutes": 15,
+    "stations": [
+      {
+        "name": "Дарниця",
+        "arrival_time": null,
+        "departure_time": "05:50"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "06:07",
+        "departure_time": "06:15"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "11:53",
+        "departure_time": "12:03"
+      },
+      {
+        "name": "Дрогобич",
+        "arrival_time": "13:18",
+        "departure_time": "13:28"
+      },
+      {
+        "name": "Трускавець",
+        "arrival_time": "13:45",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "744",
+    "paired_with": "743",
+    "type": "інтерсіті",
+    "typical_delay_minutes": 15,
+    "stations": [
+      {
+        "name": "Трускавець",
+        "arrival_time": null,
+        "departure_time": "14:30"
+      },
+      {
+        "name": "Дрогобич",
+        "arrival_time": "14:45",
+        "departure_time": "14:55"
+      },
+      {
+        "name": "Львів",
+        "arrival_time": "16:13",
+        "departure_time": "16:25"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "22:28",
+        "departure_time": "22:38"
+      },
+      {
+        "name": "Дарниця",
+        "arrival_time": "23:00",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "763",
+    "paired_with": "764",
+    "type": "інтерсіті",
+    "typical_delay_minutes": 15,
+    "stations": [
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": null,
+        "departure_time": "14:34"
+      },
+      {
+        "name": "Козятин-1",
+        "arrival_time": "16:15",
+        "departure_time": "16:17"
+      },
+      {
+        "name": "Вінниця",
+        "arrival_time": "17:04",
+        "departure_time": "17:07"
+      },
+      {
+        "name": "Жмеринка-Пас.",
+        "arrival_time": "17:41",
+        "departure_time": "18:01"
+      },
+      {
+        "name": "Вапнярка",
+        "arrival_time": "18:52",
+        "departure_time": "18:53"
+      },
+      {
+        "name": "Подільськ",
+        "arrival_time": "20:12",
+        "departure_time": "20:14"
+      },
+      {
+        "name": "Одеса-Головна",
+        "arrival_time": "22:28",
+        "departure_time": null
+      }
+    ]
+  },
+  {
+    "number": "764",
+    "paired_with": "763",
+    "type": "інтерсіті",
+    "typical_delay_minutes": 15,
+    "stations": [
+      {
+        "name": "Одеса-Головна",
+        "arrival_time": null,
+        "departure_time": "07:23"
+      },
+      {
+        "name": "Подільськ",
+        "arrival_time": "09:27",
+        "departure_time": "09:28"
+      },
+      {
+        "name": "Вапнярка",
+        "arrival_time": "10:47",
+        "departure_time": "10:48"
+      },
+      {
+        "name": "Жмеринка-Пас.",
+        "arrival_time": "11:40",
+        "departure_time": "12:15"
+      },
+      {
+        "name": "Вінниця",
+        "arrival_time": "12:51",
+        "departure_time": "12:53"
+      },
+      {
+        "name": "Козятин-1",
+        "arrival_time": "13:36",
+        "departure_time": "13:38"
+      },
+      {
+        "name": "Київ-Пас.",
+        "arrival_time": "15:23",
+        "departure_time": null
+      }
+    ]
+  }
+]
