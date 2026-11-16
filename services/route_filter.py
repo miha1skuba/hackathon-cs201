@@ -3,8 +3,9 @@ import math
 
 
 class RouteFilter:
-    def __init__(self, routes):
+    def __init__(self, routes, matrix=None):
         self.routes = list(routes.values()) if isinstance(routes, dict) else routes
+        self.matrix = matrix
 
     @staticmethod
     def get_value(obj, key, default=None):
@@ -35,8 +36,10 @@ class RouteFilter:
         return stations
 
     def get_station_name(self, station):
-        return self.get_value(station, "name",
-               self.get_value(station, "station_name"))
+        return self.get_value(
+            station, "name",
+            self.get_value(station, "station_name")
+        )
 
     def get_arrival_time(self, station):
         return self.get_value(station, "arrival_time")
@@ -59,6 +62,30 @@ class RouteFilter:
 
         return None
 
+    def get_matrix_candidates(self, start_station, end_station):
+        if self.matrix is None:
+            return None, None
+
+        paths = self.matrix.search(start_station, end_station)
+
+        direct_trains = set()
+        transfer_routes = set()
+
+        for path in paths:
+            if len(path) == 1:
+                direct_trains.add(path[0][2])
+
+            elif len(path) == 2:
+                transfer_station = path[0][1]
+                train1 = path[0][2]
+                train2 = path[1][2]
+
+                transfer_routes.add(
+                    (transfer_station, train1, train2)
+                )
+
+        return direct_trains, transfer_routes
+
     def filter_routes(
         self,
         start_station,
@@ -68,23 +95,40 @@ class RouteFilter:
         consider_delays=False
     ):
         if min_transfer_minutes < 0:
-            raise ValueError("Мінімальний час пересадки не може бути від'ємним")
+            raise ValueError(
+                "Мінімальний час пересадки не може бути від'ємним"
+            )
 
         if max_transfer_minutes < min_transfer_minutes:
-            raise ValueError("Максимальний час має бути більшим за мінімальний")
+            raise ValueError(
+                "Максимальний час має бути більшим за мінімальний"
+            )
 
         results = []
+
+        direct_candidates, transfer_candidates = (
+            self.get_matrix_candidates(start_station, end_station)
+        )
 
         for route in self.routes:
             stations = self.get_stations(route)
 
-            start_index = self.find_station_index(route, start_station)
-            end_index = self.find_station_index(route, end_station)
+            start_index = self.find_station_index(
+                route, start_station
+            )
+            end_index = self.find_station_index(
+                route, end_station
+            )
 
             if start_index is None or end_index is None:
                 continue
 
             if start_index >= end_index:
+                continue
+
+            train_number = self.get_route_number(route)
+
+            if direct_candidates and train_number not in direct_candidates:
                 continue
 
             departure = self.get_departure_time(stations[start_index])
@@ -95,7 +139,7 @@ class RouteFilter:
 
             results.append({
                 "type": "direct",
-                "first_train": self.get_route_number(route),
+                "first_train": train_number,
                 "second_train": None,
                 "transfer_station": None,
                 "departure_time": departure,
@@ -105,6 +149,8 @@ class RouteFilter:
 
         for first_route in self.routes:
             first_stations = self.get_stations(first_route)
+
+            first_train_number = self.get_route_number(first_route)
 
             start_index = self.find_station_index(
                 first_route, start_station
@@ -124,6 +170,11 @@ class RouteFilter:
                 start_index + 1, len(first_stations)
             ):
                 transfer_station = first_stations[transfer_index]
+
+                transfer_name = self.get_station_name(
+                    transfer_station
+                )
+
                 arrival = self.get_arrival_time(transfer_station)
 
                 if arrival is None:
@@ -139,17 +190,27 @@ class RouteFilter:
                 )
 
                 for second_route in self.routes:
+                    second_train_number = self.get_route_number(
+                        second_route
+                    )
+
+                    if first_train_number == second_train_number:
+                        continue
+
                     if (
-                        self.get_route_number(second_route)
-                        == self.get_route_number(first_route)
+                        transfer_candidates
+                        and (
+                            transfer_name,
+                            first_train_number,
+                            second_train_number
+                        ) not in transfer_candidates
                     ):
                         continue
 
                     second_stations = self.get_stations(second_route)
 
                     second_transfer_index = self.find_station_index(
-                        second_route,
-                        self.get_station_name(transfer_station)
+                        second_route, transfer_name
                     )
 
                     end_index = self.find_station_index(
@@ -173,12 +234,15 @@ class RouteFilter:
                     if departure is None or final_arrival is None:
                         continue
 
-                    departure_minutes = self.time_to_minutes(departure)
+                    departure_minutes = self.time_to_minutes(
+                        departure
+                    )
 
                     days_to_add = max(
                         0,
                         math.ceil(
-                            (earliest_departure - departure_minutes) / 1440
+                            (earliest_departure - departure_minutes)
+                            / 1440
                         )
                     )
 
@@ -186,7 +250,9 @@ class RouteFilter:
                         departure_minutes + days_to_add * 1440
                     )
 
-                    transfer_time = aligned_departure - arrival_minutes
+                    transfer_time = (
+                        aligned_departure - arrival_minutes
+                    )
 
                     if (
                         min_transfer_minutes
@@ -200,11 +266,9 @@ class RouteFilter:
 
                         results.append({
                             "type": "transfer",
-                            "first_train": self.get_route_number(first_route),
-                            "second_train": self.get_route_number(second_route),
-                            "transfer_station": self.get_station_name(
-                                transfer_station
-                            ),
+                            "first_train": first_train_number,
+                            "second_train": second_train_number,
+                            "transfer_station": transfer_name,
                             "departure_time": start_departure,
                             "arrival_time": self.minutes_to_time(
                                 aligned_arrival
@@ -220,7 +284,9 @@ class RouteFilter:
                             "transfer_minutes": transfer_time
                         })
 
-        results.sort(key=lambda item: item["transfer_minutes"])
+        results.sort(
+            key=lambda item: item["transfer_minutes"]
+        )
 
         return results
 
