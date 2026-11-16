@@ -1,5 +1,3 @@
-from re import search
-
 
 class Matrix():
     def __init__(self, stations, routes):
